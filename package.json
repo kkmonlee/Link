@@ -4,11 +4,11 @@
   "description": "a simple and colourful game",
   "main": "index.js",
   "dependencies": {
-    "express": "^4.11.2",
+    "express": "^4.14.0",
     "gulp": "^3.8.11",
     "gulp-nodemon": "^1.0.5",
-    "webpack": "^1.5.3",
-    "webpack-dev-server": "^1.7.0"
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
   },
   "devDependencies": {
     "coffee-script": "^1.9.0"

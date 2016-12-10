@@ -1,6 +1,5 @@
 express = require 'express'
 app = express()
-
 router = express.Router()
 
 app.use router

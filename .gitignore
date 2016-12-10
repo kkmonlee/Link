@@ -1,1 +1,9 @@
 /node_modules
+.idea/inspectionProfiles/
+.idea/workspace.xml
+Gulpfile.js
+Gulpfile.js.map
+bin/main_server.js
+bin/main_server.js.map
+server.js
+server.js.map

@@ -6,6 +6,7 @@ Open source game made in Javascript using Coffeescript
 
 # Repository Testing
 * Leon can successfully push.
+* Atul can successfully push.
 
 # Authors
 * Atul Anand 

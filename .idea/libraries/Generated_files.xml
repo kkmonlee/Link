@@ -3,11 +3,13 @@
     <properties>
       <sourceFilesUrls>
         <item url="file://$PROJECT_DIR$/server.js" />
+        <item url="file://$PROJECT_DIR$/bin/main_server.js" />
         <item url="file://$PROJECT_DIR$/Gulpfile.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
       <root url="file://$PROJECT_DIR$/server.js" />
+      <root url="file://$PROJECT_DIR$/bin/main_server.js" />
       <root url="file://$PROJECT_DIR$/Gulpfile.js" />
     </CLASSES>
     <SOURCES />

@@ -1,13 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="margin: 0; padding: 0; border: 0; width: 100%; height: 100%;">
 <head>
     <meta charset="UTF-8">
     <title>Welcome to Link!</title>
 </head>
 <body style = "margin: 0; padding: 0; border: 0; width: 100%; height: 100%;">
-<canvas id="canvas" style="display: block;"></canvas>
+<canvas id="canvas" style="display: block; width: 100%; height: 100%"></canvas>
 <script>
-    // Code here
+    var x = canvas;
+    var y = document.body;
+    x.width = window.innerWidth;
+    x.height = window.innerHeight;
+
+    var z = x.getContext('2d');
 </script>
 <script src = "//localhost:3004/js/bundle.js"></script>
 

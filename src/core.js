@@ -3,13 +3,12 @@ var canvas;
  * Created by aa on 10 December 2016.
  */
 
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
-context = canvas.getContext('2d');
-
-dotSize = Math.min(canvas.width, canvas.height) / 7;
-xs = canvas.width / 2 - dotSize * 3 + dotSize / 2;
-ys = canvas.height / 2 - dotSize * 3;
+context = c;
+W = a.width;
+H = a.height;
+dotSize = Math.min(W, H) / 7;
+xs = W / 2 - dotSize * 3 + dotSize / 2;
+ys = H / 2 - dotSize * 3;
 
 colors = ['#F52616', '#9317A8', '#188FEC', '#4BCB50', '#FF8800'];
 
@@ -54,7 +53,7 @@ for (var x = 0; x < 6; x++) {
 }
 
 render = function () {
-    context.clearRect(0, 0, canvas.width, canvas.height);
+    context.clearRect(0, 0, W, H);
 
     for (var i = dots.length - 1; i >= 0; i--) {
         var a = dots[i];
@@ -88,15 +87,15 @@ render = function () {
 
             if (!a.bdown && !a.bup && a.y == a.ty) {
                 a.bdown = true;
-                a.ty -= dotSize / 2;
-                a.tt = dotSize / 3.2;
+                a.ty -= dotSize / 3;
+                a.tt = dotSize / 5;
             } else if (a.bdown && !a.bup && a.y == a.ty) {
                 a.bup = true;
-                a.tt = dotSize / 30;
-                a.ty += dotSize / 2;
+                a.tt = dotSize / 15;
+                a.ty += dotSize / 3;
             }
         } else {
-            a.tt = dotSize / 30;
+            a.tt = dotSize / 15;
             a.bdown = false;
             a.bup = false;
         }
@@ -133,7 +132,6 @@ render = function () {
     context.fillText('Score: ' + score, xs + dotSize * 3, ys + dotSize * 6);
     context.fillText('Time: ' + time, xs, ys + dotSize * 6);
 
-    requestAnimationFrame(render);
 };
 
 isBelow = function (a, b) {
@@ -237,7 +235,7 @@ window.onMouseMove = window.onTouchMove = function (e) {
     }
 };
 
-requestAnimationFrame(render);
+setInterval(render, 33);
 
 /**
  * TODO: make render function with dots.length

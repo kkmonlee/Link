@@ -20,4 +20,3 @@ Open source game made in Javascript using CoffeeScript
 
 # Authors
 * Atul Anand 
-* Leon Boehmer

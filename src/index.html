@@ -12,9 +12,13 @@
     x.width = window.innerWidth;
     x.height = window.innerHeight;
 
+    window.onresize = function () {
+        window.location.reload()
+    };
+
     var z = x.getContext('2d');
 </script>
-<script src = "/src/core.js"></script>
+<script src = "/js"></script>
 
 </body>
 </html>

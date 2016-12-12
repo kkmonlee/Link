@@ -1,13 +1,6 @@
-express = require 'express'
-app = express()
-router = express.Router()
+app = require '../server'
 
-app.use router
+port = process.env.PORT or 3000
 
-router.get '/js', (req, res) ->
-  res.sendfile 'src/core.js'
-
-router.get '/', (req, res) ->
-  res.sendfile 'src/index.html'
-
-module.exports = app
+app.listen port, ->
+  console.log 'Listening on port %d', port

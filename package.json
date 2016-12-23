@@ -4,13 +4,18 @@
   "description": "a simple and colourful game",
   "main": "index.js",
   "dependencies": {
+    "clay-loglevel": "^1.1.0",
     "coffee-script": "^1.9.0",
     "express": "^4.14.0",
+    "fetch": "^1.1.0",
     "gulp": "^3.8.11",
     "gulp-nodemon": "^1.0.5",
+    "lodash": "^4.17.2",
     "nib": "^1.1.2",
+    "promiz": "^1.0.5",
     "webpack": "^1.14.0",
     "webpack-dev-server": "^1.16.2",
+    "zock": "^0.2.6",
     "zorium": "^1.0.13",
     "zorium-paper": "^0.5.1"
   },
